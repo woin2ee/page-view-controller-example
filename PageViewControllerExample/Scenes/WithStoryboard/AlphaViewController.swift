@@ -45,7 +45,7 @@ final class AlphaViewController: UIViewController {
     private func changeButtonColor(by index: Int) {
         buttonList.enumerated().forEach { i, button in
             if i == index {
-                button.tintColor = .green
+                button.tintColor = .systemGreen
             } else {
                 button.tintColor = .systemBlue
             }
