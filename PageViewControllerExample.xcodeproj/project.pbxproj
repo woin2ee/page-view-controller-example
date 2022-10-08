@@ -14,6 +14,7 @@
 		E86CF80228F14E130030518B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86CF80128F14E130030518B /* Assets.xcassets */; };
 		E86CF80528F14E130030518B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86CF80328F14E130030518B /* LaunchScreen.storyboard */; };
 		E86CF81228F155C90030518B /* BetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81128F155C90030518B /* BetaViewController.swift */; };
+		E86CF81428F15DC30030518B /* AlphaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81328F15DC30030518B /* AlphaPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E86CF80428F14E130030518B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E86CF80628F14E130030518B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PageViewControllerExample/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		E86CF81128F155C90030518B /* BetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaViewController.swift; sourceTree = "<group>"; };
+		E86CF81328F15DC30030518B /* AlphaPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				E86CF7FC28F14E0F0030518B /* AlphaViewController.swift */,
 				E86CF7FE28F14E0F0030518B /* Alpha.storyboard */,
+				E86CF81328F15DC30030518B /* AlphaPageViewController.swift */,
 			);
 			path = WithStoryboard;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				E86CF7F928F14E0F0030518B /* AppDelegate.swift in Sources */,
 				E86CF81228F155C90030518B /* BetaViewController.swift in Sources */,
 				E86CF7FB28F14E0F0030518B /* SceneDelegate.swift in Sources */,
+				E86CF81428F15DC30030518B /* AlphaPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
