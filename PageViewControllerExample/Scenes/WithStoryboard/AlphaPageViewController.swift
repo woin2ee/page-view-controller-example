@@ -19,6 +19,13 @@ final class AlphaPageViewController: UIPageViewController {
         return [firstVC, secondVC, thirdVC]
     }()
     
+    var currentIndex: Int {
+        guard let displayedVC = self.viewControllers?.first else { return 0 }
+        return viewList.firstIndex(of: displayedVC) ?? 0
+    }
+    
+    var transitionCompletion: ((Int) -> Void)? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +39,24 @@ final class AlphaPageViewController: UIPageViewController {
                 animated: true
             )
         }
+    }
+    
+    func setViewControllers(by index: Int) {
+        guard index >= 0, index < viewList.count else { return }
+        
+        let direction: UIPageViewController.NavigationDirection = {
+            if index < currentIndex {
+                return .reverse
+            } else {
+                return .forward
+            }
+        }()
+        
+        self.setViewControllers(
+            [viewList[index]],
+            direction: direction,
+            animated: true
+        )
     }
 }
 
@@ -55,5 +80,16 @@ extension AlphaPageViewController: UIPageViewControllerDataSource, UIPageViewCon
         else { return nil }
         
         return viewList[index - 1]
+    }
+    
+    func pageViewController(
+        _ pageViewController: UIPageViewController,
+        didFinishAnimating finished: Bool,
+        previousViewControllers: [UIViewController],
+        transitionCompleted completed: Bool
+    ) {
+        if completed {
+            transitionCompletion?(currentIndex)
+        }
     }
 }

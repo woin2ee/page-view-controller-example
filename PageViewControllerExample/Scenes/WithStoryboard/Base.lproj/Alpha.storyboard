@@ -17,25 +17,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPZ-Pb-z4c">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
                                 <connections>
                                     <segue destination="OVT-Uq-BnY" kind="embed" id="qZ3-Ly-eih"/>
                                 </connections>
                             </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-D9-FB4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9b-O6-1rc">
+                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="First"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQF-Cg-tfG">
+                                        <rect key="frame" x="139.5" y="0.0" width="135" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Second"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSB-XK-9bm">
+                                        <rect key="frame" x="278.5" y="0.0" width="135.5" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Third"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xH9-iK-eCy"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iPZ-Pb-z4c" secondAttribute="trailing" id="2tE-fy-egn"/>
-                            <constraint firstItem="iPZ-Pb-z4c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Llt-vs-JWH"/>
-                            <constraint firstItem="iPZ-Pb-z4c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P2g-Cn-Tca"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iPZ-Pb-z4c" secondAttribute="bottom" id="zCu-UL-mcH"/>
+                            <constraint firstItem="iPZ-Pb-z4c" firstAttribute="top" secondItem="dcB-D9-FB4" secondAttribute="bottom" id="O7v-Jc-iU4"/>
+                            <constraint firstItem="iPZ-Pb-z4c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ONE-9J-AlO"/>
+                            <constraint firstItem="dcB-D9-FB4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a2I-1x-6S0"/>
+                            <constraint firstItem="dcB-D9-FB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cSG-UC-OK5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcB-D9-FB4" secondAttribute="trailing" id="ipE-2V-eDY"/>
+                            <constraint firstItem="iPZ-Pb-z4c" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rNz-Tc-oig"/>
+                            <constraint firstItem="iPZ-Pb-z4c" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="s6T-Mx-4Ue"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonList" destination="Y9b-O6-1rc" collectionClass="NSMutableArray" id="qUQ-Nc-irc"/>
+                        <outletCollection property="buttonList" destination="UQF-Cg-tfG" collectionClass="NSMutableArray" id="aIE-te-UT6"/>
+                        <outletCollection property="buttonList" destination="hSB-XK-9bm" collectionClass="NSMutableArray" id="nlX-j8-uxK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="72"/>
+            <point key="canvasLocation" x="44.927536231884062" y="71.651785714285708"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t9x-Ah-gy6">
