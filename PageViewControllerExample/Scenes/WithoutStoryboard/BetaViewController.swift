@@ -16,9 +16,11 @@ final class BetaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.backgroundColor = .white
-        
+        layoutPageViewController()
+    }
+    
+    private func layoutPageViewController() {
         self.view.addSubview(betaPageViewController.view)
         betaPageViewController.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -27,8 +29,5 @@ final class BetaViewController: UIViewController {
             betaPageViewController.view.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor),
             betaPageViewController.view.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         ])
-        
-        
-        
     }
 }
