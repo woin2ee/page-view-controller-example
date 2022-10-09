@@ -15,6 +15,10 @@
 		E86CF80528F14E130030518B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86CF80328F14E130030518B /* LaunchScreen.storyboard */; };
 		E86CF81228F155C90030518B /* BetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81128F155C90030518B /* BetaViewController.swift */; };
 		E86CF81428F15DC30030518B /* AlphaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81328F15DC30030518B /* AlphaPageViewController.swift */; };
+		E86CF81628F2E0580030518B /* BetaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81528F2E0580030518B /* BetaPageViewController.swift */; };
+		E86CF81828F2E09A0030518B /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81728F2E09A0030518B /* GreenViewController.swift */; };
+		E86CF81A28F2E0AD0030518B /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81928F2E0AD0030518B /* BlueViewController.swift */; };
+		E86CF81C28F2E3B20030518B /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CF81B28F2E3B20030518B /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E86CF80628F14E130030518B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PageViewControllerExample/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		E86CF81128F155C90030518B /* BetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaViewController.swift; sourceTree = "<group>"; };
 		E86CF81328F15DC30030518B /* AlphaPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaPageViewController.swift; sourceTree = "<group>"; };
+		E86CF81528F2E0580030518B /* BetaPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaPageViewController.swift; sourceTree = "<group>"; };
+		E86CF81728F2E09A0030518B /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		E86CF81928F2E0AD0030518B /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		E86CF81B28F2E3B20030518B /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				E86CF81128F155C90030518B /* BetaViewController.swift */,
+				E86CF81528F2E0580030518B /* BetaPageViewController.swift */,
+				E86CF81728F2E09A0030518B /* GreenViewController.swift */,
+				E86CF81928F2E0AD0030518B /* BlueViewController.swift */,
+				E86CF81B28F2E3B20030518B /* RedViewController.swift */,
 			);
 			path = WithoutStoryboard;
 			sourceTree = "<group>";
@@ -185,10 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86CF7FD28F14E0F0030518B /* AlphaViewController.swift in Sources */,
+				E86CF81C28F2E3B20030518B /* RedViewController.swift in Sources */,
 				E86CF7F928F14E0F0030518B /* AppDelegate.swift in Sources */,
+				E86CF81A28F2E0AD0030518B /* BlueViewController.swift in Sources */,
 				E86CF81228F155C90030518B /* BetaViewController.swift in Sources */,
+				E86CF81628F2E0580030518B /* BetaPageViewController.swift in Sources */,
 				E86CF7FB28F14E0F0030518B /* SceneDelegate.swift in Sources */,
 				E86CF81428F15DC30030518B /* AlphaPageViewController.swift in Sources */,
+				E86CF81828F2E09A0030518B /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
